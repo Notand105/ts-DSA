@@ -1,5 +1,5 @@
 
-class ListNode{
+export class ListNode{
     public data: number;
     public next: ListNode | null
     constructor(data:number){
@@ -8,7 +8,7 @@ class ListNode{
     }
 }
 
-class LinkedList{ 
+export class LinkedList{ 
     public head: ListNode | null
     constructor(head:ListNode){
         this.head = head
@@ -65,15 +65,3 @@ class LinkedList{
     }
 }
 
-let First = new ListNode(0)
-let linked_list = new LinkedList(First)
-
-for (let i=0;i<10;i++){
-   linked_list.append(i) 
-}
-linked_list.insert_head(4)
-linked_list.print()
-console.log(
-    linked_list.find(40),
-    linked_list.find(4)
-)

@@ -1,10 +1,13 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LinkedList = exports.ListNode = void 0;
 class ListNode {
     constructor(data) {
         this.data = data;
         this.next = null;
     }
 }
+exports.ListNode = ListNode;
 class LinkedList {
     constructor(head) {
         this.head = head;
@@ -57,11 +60,4 @@ class LinkedList {
         return false;
     }
 }
-let First = new ListNode(0);
-let linked_list = new LinkedList(First);
-for (let i = 0; i < 10; i++) {
-    linked_list.append(i);
-}
-linked_list.insert_head(4);
-linked_list.print();
-console.log(linked_list.find(40), linked_list.find(4));
+exports.LinkedList = LinkedList;
