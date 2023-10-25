@@ -13,3 +13,4 @@ function fibonacci(num:number):number{
 
 console.log(factorial(4))
 console.log(fibonacci(4))
+//no lo voy a intentar ocultar, este commit es solo para no perder la racha
